@@ -1,4 +1,4 @@
-# ESP-Assistant
+# VoicePuck
 An ESP32 S3 voice assistant for Home Assistant. Light weight and should compile on low end systems.
 
 The main goal of this project was to create a voice assistant (VA) for HA that is not depending on external files*. A second requirement was that for compiling you don't need much resources. This yaml compile many times faster then the ESP32-S3_box version. This version of the voice assistant is also capable to set multiple timers.
@@ -14,7 +14,7 @@ The ESP32-S3-BOX version that I also have showed to be far more stable. Because 
 
 This the latest version. It is nearly the same as version 2 but this one makes it possible to have a continues conversation.
 
-**Hardware needed**
+# Hardware needed
 - CPU: ESP32-S3 N16R8
 - Mic: INMP441
 - Amp: MAX98357A
@@ -24,27 +24,36 @@ This the latest version. It is nearly the same as version 2 but this one makes i
 I've include the schematic that I used and placed it in the media folder. It follows to general approach for this setup but i had to use 2 diffentent pins to get it working reliably.
 Schematic is based on the one found [here](https://smarthomecircle.com/How-to-setup-on-device-wake-word-for-voice-assistant-home-assistant#circuit-diagram-for-esp32-s3-with-inmp441-microphone--max98357a-audio-amplifier)
 
-**Requirements**
+# Requirements
 - Home Assistant
 - ESPHome installed
 
-**Setup**
+# Firmware
+I recommend using ESPHome verison 2024.11.3  
+
+# Setup
 Go to your config/esphome folder
 Create a folder and name it sounds
 Place the sounds file(s) there
+Place secrets.yaml where the config is located
 
 Have a look at the yaml file and change the following substitution for the wake word you want.
 At the moment okay_nabu, hey_jarvis and alexa are the available options
 
-_  micro_wake_word_model: okay_nabu _
+  ```
+  micro_wake_word_model: okay_nabu
+  ```
+Edit secrets.yaml with correct information
 
-And don't forget to create your secret SSID een password for the wifi section
+To generate api_key use:
+  ```
+  openssl rand -base64 32
+  ```
 
-  ssid: !secret wifi_ssid
-  
-  password: !secret wifi_password
 
-  
+
+
+# Gallery
 I've include the 3D print files for the body and the cover. I used a resin printer for these.
 Version 2 has a bit better wire management.
 
@@ -71,7 +80,7 @@ The entities that are available in Home Assistant
 ![HA-device](https://github.com/user-attachments/assets/dca3b294-eca2-4e0a-87b3-f8b0228a2dab)
 
 
-**The troubleshooting part**
+# The troubleshooting part
 
 I had one small issue that was simply my own fault. The speaker and LED's didn't work. I used the 5V pin to get my 5V from but I forgot to add a small solder blob to make the 5V pin an output pin. So make sure you close these pads with a bit of solder
 
