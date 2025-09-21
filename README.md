@@ -27,9 +27,7 @@ Schematic is based on the one found [here](https://smarthomecircle.com/How-to-se
 # Requirements
 - Home Assistant
 - ESPHome installed
-
-# Firmware
-I recommend using ESPHome verison 2024.11.3  
+- Linux environment
 
 # Instructions
 1. Install esphome
