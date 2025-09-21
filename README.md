@@ -31,27 +31,36 @@ Schematic is based on the one found [here](https://smarthomecircle.com/How-to-se
 # Firmware
 I recommend using ESPHome verison 2024.11.3  
 
-# Setup
-Go to your config/esphome folder
-Create a folder and name it sounds
-Place the sounds file(s) there
-Place secrets.yaml where the config is located
-
-Have a look at the yaml file and change the following substitution for the wake word you want.
-At the moment okay_nabu, hey_jarvis and alexa are the available options
-
+# Instructions
+1. Install esphome
+  ```
+pip install esphome==2024.11.3 
+  ```
+2. Download config e.g v3
+  ```
+curl -O https://raw.githubusercontent.com/MatiDEV-PL/VoicePuck/main/ESP%20Assistant%20v3.yaml
+  ```
+3. Create a folder in home directory and name it sounds than place timer_finished.wav
+  ```
+curl -O https://raw.githubusercontent.com/MatiDEV-PL/VoicePuck/main/sounds/timer_finished.wav
+  ```
+4. Download and place secrets.yaml where the config is located
+  ```
+curl -O https://raw.githubusercontent.com/MatiDEV-PL/VoicePuck/main/secrets.yaml
+  ```
+5. Have a look at the config yaml file and change the following line for the wake word you want.
+You can choose okay_nabu, hey_jarvis or alexa.
   ```
   micro_wake_word_model: okay_nabu
   ```
-Edit secrets.yaml with correct information
-
-To generate api_key use:
+6. Edit secrets.yaml with correct information. To generate api_key use:
   ```
   openssl rand -base64 32
   ```
-
-
-
+7. Compile the firmware
+  ```
+  esphome compile "ESP Assistant v2.yaml"
+  ```
 
 # Gallery
 I've include the 3D print files for the body and the cover. I used a resin printer for these.
