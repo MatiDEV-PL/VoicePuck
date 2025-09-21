@@ -15,10 +15,10 @@ The ESP32-S3-BOX version that I also have showed to be far more stable. Because 
 This the latest version. It is nearly the same as version 2 but this one makes it possible to have a continues conversation.
 
 # Hardware needed
-- CPU: ESP32-S3 N16R8
-- Mic: INMP441
-- Amp: MAX98357A
-- Led: 3 WS2812B leds.
+- CPU: ESP32-S3 N16R8 [AliExpress](https://aliexpress.com/item/1005008812355849.html)
+- Mic: INMP441 [AliExpress](https://aliexpress.com/item/1005006740892303.html)
+- Amp: MAX98357A [AliExpress](https://aliexpress.com/item/1005007068815767.html)
+- Led: 3 WS2812B leds. [AliExpress](https://aliexpress.com/item/1005002657432751.html)
 - Speaker: 40mm Headset Driver Hifi Headphone Speaker Unit 32ohm [AliExpress](https://www.aliexpress.com/item/1005001352277084.html)
 
 I've include the schematic that I used and placed it in the media folder. It follows to general approach for this setup but i had to use 2 diffentent pins to get it working reliably.
