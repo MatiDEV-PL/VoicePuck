@@ -34,7 +34,14 @@ I recommend using ESPHome verison 2024.11.3
 # Instructions
 1. Install esphome
   ```
-pip install esphome==2024.11.3 
+pip install esphome==2024.11.3
+  ```
+If you are getting error: externally-managed-environment you have to do it in virtual environment
+  ```
+python3 -m venv ~/esphome-ve
+source ~/esphome-ve/bin/activate
+pip install --upgrade pip
+pip install esphome==2024.11.3
   ```
 2. Download config e.g v3
   ```
