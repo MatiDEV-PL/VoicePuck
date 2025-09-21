@@ -64,7 +64,7 @@ You can choose okay_nabu, hey_jarvis or alexa.
   ```
 7. Compile the firmware
   ```
-  esphome compile "ESP Assistant v2.yaml"
+  esphome compile "ESP Assistant v3.yaml"
   ```
 
 # Gallery
