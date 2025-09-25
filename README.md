@@ -66,6 +66,14 @@ You can choose okay_nabu, hey_jarvis or alexa.
   ```
   esphome compile "ESP Assistant v3.yaml"
   ```
+8. Flashing the firmware. For that you will need esptool:
+  ```
+  pip install esptool
+  ```
+  ```
+esptool.py --port [YOUR_PORT] write_flash 0x0 path_to_firmware.bin
+  ```
+9. After successful flash, you can add your VoicePuck to Home Assistant
 
 # Gallery
 I've include the 3D print files for the body and the cover. I used a resin printer for these.
@@ -75,19 +83,14 @@ Version 2 has a bit better wire management.
 
 ![VoicePuck-bottom](https://github.com/user-attachments/assets/b499539f-c70a-4596-942c-3c0e93b9055e)
 
-For comparison this is a Voice puck with with a dark cover which is perforated to let the light shine through.
+For comparison this is a VoicePuck with a dark cover which is perforated to let the light shine through.
 Left the Google home version, right the ESP Assistant
 
 ![VoicePuck-GoogleHome](https://github.com/user-attachments/assets/5bf028dc-2269-41cd-9bdd-1a9a011f9e1a)
 
-You can choose your cover freely. This one has a light wooden vineer cover. 
-This thin wood let the light shine through without a problem.
-
-![VoicePuck-white](https://github.com/user-attachments/assets/48c8b008-5497-4cdd-bbc0-d8b4e1e2929a)
+You can choose your cover freely. This one was 3d printed and than covered in some leftover fabric.
 
 ![VoicePuck](https://github.com/MatiDEV-PL/VoicePuck/blob/main/media/VoicePuck.jpg)
-
-[Infinity VoicePuck](https://www.youtube.com/shorts/t8ANTnrit_I)
 
 The entities that are available in Home Assistant
 
