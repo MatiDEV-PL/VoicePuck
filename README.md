@@ -85,7 +85,7 @@ This thin wood let the light shine through without a problem.
 
 ![VoicePuck-white](https://github.com/user-attachments/assets/48c8b008-5497-4cdd-bbc0-d8b4e1e2929a)
 
-![20240810_091030](https://github.com/user-attachments/assets/dab989f1-f182-4e96-a11f-3fbb608e9481)
+![VoicePuck](https://github.com/MatiDEV-PL/VoicePuck/blob/main/media/VoicePuck.jpg)
 
 [Infinity VoicePuck](https://www.youtube.com/shorts/t8ANTnrit_I)
 
